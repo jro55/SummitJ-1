@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', routes);
 
 const port = _getPort(process.env.NODE_ENV);
-app.listen(port, () => {
+app.listen(port, function() {
     console.log('server is listening on port ' + port);
 });
 
